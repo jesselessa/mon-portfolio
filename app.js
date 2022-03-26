@@ -24,7 +24,7 @@ if (window.matchMedia("(max-width: 1300px)")) {
 const txtAnim = document.querySelector(".txt-animation");
 
 let typewriter = new Typewriter(txtAnim, {
-  loop: false,
+  loop: true,
   deleteSpeed: 20,
 });
 
