@@ -1,3 +1,5 @@
+// Menu animation
+
 const btnMenu = document.querySelector(".btn-rond-menu");
 const nav = document.querySelector(".nav-gauche");
 const allItemsNav = document.querySelectorAll(".nav-menu-item");
