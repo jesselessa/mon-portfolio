@@ -677,3 +677,17 @@ h1 {
         height: 380px;
     }
 }
+
+/*--------------- Footer ------------------------*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+@media screen and (max-width: 1300px) {
+    footer {
+        padding-left: 0px;
+    }
+}
