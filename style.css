@@ -401,29 +401,21 @@ h1 {
     border-top: 1px dashed #333;
     border-bottom: 1px dashed #333;
     color: #e7e7e7;
-}
-.fond-forme {
     background: #485563;
     background-image: linear-gradient(to right, #29323c, #485563);
-    width: 2300px;
-    height: 1000px;
-    position: absolute;
-    transform: rotate(-45deg) translateX(100px) translateY(-15px);
-    z-index: -1;
-}
 
+}
 .titre-pres {
     font-size: 40px;
     text-align: center;
     margin: 20px 0 20px 0;
     padding-left: 300px;
 }
-
 .container-presentation {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-shrink: 0;
     padding-left: 300px;
 }
@@ -432,7 +424,6 @@ h1 {
     flex-shrink: 0;
     margin-bottom: 50px;
     padding-left: 90px;
-    padding-top: 20px;
 }
 .pres-gauche h3, .pres-droite h3 {
     text-align: center;
@@ -443,16 +434,13 @@ h1 {
     width: 60px;
     margin: 0 auto 20px auto;
 }
-
 .pres-droite hr {
     width: 60px;
 }
-
 .pres-gauche p {
     text-align: justify;
     margin-bottom: 15px;
 }
-
 .pres-droite {
     width: 600px;
     flex-shrink: 0;
@@ -501,6 +489,7 @@ h1 {
     }
     .container-presentation {
         flex-direction: column;
+        align-items: center;
     }
     .pres-gauche {
         width: 80%;
@@ -512,7 +501,6 @@ h1 {
         font-size: 20px;
         letter-spacing: 0px;
     }
-
     .pres-gauche p {
         font-size: 18px;
     }
@@ -533,7 +521,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {    
     .container-presentation {
         margin-top: 10px;
         margin-bottom: 70px;
@@ -582,6 +570,10 @@ h1 {
     align-items: center;
 }
 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
     width: 420px;
     height: 400px;
@@ -617,8 +609,9 @@ h1 {
     line-height: 50px;
     text-align: center;
     color: #333;
+    font-weight: 500;
     text-decoration: none;
-    border: 1px solid #333;
+    border: 1.5px solid #333;
     border-radius: 3px;
     cursor: pointer;
     position: relative;
@@ -639,4 +632,48 @@ h1 {
 .btn-projets:hover::after {
     transition: transform 0.3s 0.1s linear;
     transform: translateX(400px);
+}
+
+/* MQ Portfolio */
+
+@media screen and (max-width: 1300px) {
+    .cont-portfolio{
+        padding-left: 0;
+    }
+    .titre-port {
+        font-size: 40px;
+        margin: 50px 0 70px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .titre-port {
+        margin: 10px 0;
+        padding: 30px 0;
+    }
+    .item {
+        height: 420px;
+    }
+    .cont-img-port {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .item h3{
+        font-size: 18px;
+    }
+    .item p{
+        font-size: 15px;
+    }
+    .btn-projets{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .item {
+        height: 380px;
+    }
 }
