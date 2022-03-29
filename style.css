@@ -22,13 +22,14 @@ img {
     display: block;
     max-width: 100%;
 }
+
 /*----------------- Navigation ----------------*/
 
 .nav-gauche {
     width: 300px;
     height: 100vh;
     min-height: 800px;
-    background: #333;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,19 +62,19 @@ img {
     margin: 5px auto 0 auto;
     height: 2px;
     border-radius: 2px;
-    background: #aaa;
+    background: #f8c969;
     transition: all 0.2s ease-out;
 }
 .blocs-menu span:hover::after {
     width: 100%;
 }
 
-/* Portrait */
+/** Portrait */
 
 .blocs-menu:nth-child(1) {
     width: 100%;
     height: 25%;
-    background: #333;
+    background: black;
 }
 .cercle-portrait {
     margin: 20px 0;
@@ -100,7 +101,7 @@ img {
     transform: translate(-50%,-50%);
 }
 
-/* Media Queries Navigation */
+/*! Media Queries Navigation */
 
 @media screen and (max-width: 1300px) {
 
@@ -122,9 +123,9 @@ img {
     .btn-rond-menu {
         width: 70px;
         height: 70px;
-        border: 1px solid #f1f1f1;
+        border: 2px solid #f8c969;
         border-radius: 50%;
-        background: #333;
+        background: black;
         position: fixed;
         top: 10px;
         left: 10px;
@@ -184,6 +185,7 @@ img {
 
 /*---------------- Homepage ------------------*/
 .accueil {
+    /* background: url("./ressources/accueil2.jpg") no-repeat right/cover; */
     background: url("./ressources/accueil.jpg") no-repeat right/cover;
     height: 100vh;
     min-height: 900px;
@@ -201,7 +203,7 @@ h1 {
     font-size: 30px;
     margin: 10px 0 10px 60px;
 }
-.btn-acc, .btn-pres {
+.btn-acc {
     display: inline-flex;
     width: 200px;
     height: 50px;
@@ -218,11 +220,11 @@ h1 {
 .btn-acc:hover{
     transform: scale(1.02);
 }
-.btn-acc1, .btn-pres1 {
+.btn-acc1 {
     margin: 10px 0 0 60px;
 }
 .btn-acc2 {
-    background: transparent;
+    background: #f8c969;
     border: 2px solid black;
     color: black;
     font-weight: 700;
@@ -235,7 +237,7 @@ h1 {
 .media {
     width: 60px;
     height: 60px;
-    background: #333;
+    background: black;
     border-radius: 50%;
     margin-right: 10px;
     display: flex;
@@ -245,7 +247,7 @@ h1 {
 }
 .media2 {
     background: transparent;
-    border: 2px solid #333;
+    border: 2px solid black;
 }
 .icone-medias {
     width: 30px;
@@ -261,8 +263,8 @@ h1 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 0 0 0 #333;
-    background: #333;
+    box-shadow: 0 0 0 0 black;
+    background: black;
     animation: pulse 1.3s infinite;
 }
 @keyframes pulse {
@@ -274,7 +276,7 @@ h1 {
     width: 35px;
 }
 
-/* MQ Homepage */
+/*! MQ Homepage */
 
 @media screen and (max-width: 1300px) {
     .accueil {
@@ -391,19 +393,15 @@ h1 {
     }
 }
 
-/* ---------- Presentation ---------- */
+/*----------- Presentation -----------*/
 
 .presentation {
     width: 100%;
     height: 100vh;
-    position: relative;
     overflow: hidden;
-    border-top: 1px dashed #333;
-    border-bottom: 1px dashed #333;
-    color: #e7e7e7;
-    background: #485563;
-    background-image: linear-gradient(to right, #29323c, #485563);
-
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    background: #f8c969;
 }
 .titre-pres {
     font-size: 40px;
@@ -424,6 +422,8 @@ h1 {
     flex-shrink: 0;
     margin-bottom: 50px;
     padding-left: 90px;
+    line-height: 1.4;
+
 }
 .pres-gauche h3, .pres-droite h3 {
     text-align: center;
@@ -431,11 +431,9 @@ h1 {
     letter-spacing: 2px;
 }
 .pres-gauche hr, .pres-droite hr {
-    width: 60px;
+    width: 70px;
     margin: 0 auto 20px auto;
-}
-.pres-droite hr {
-    width: 60px;
+    border-bottom: 2px solid black;
 }
 .pres-gauche p {
     text-align: justify;
@@ -462,9 +460,31 @@ h1 {
     font-size: 25px;
     display: inline;
 }
+.btn-pres {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+}
+.btn-pres:hover{
+    transform: scale(1.02);
+}
 
-/* MQ Presentation */
+/*! MQ Presentation */
 
+@media screen and (min-width: 1301px) {
+    .container-presentation {
+        padding-left: 360px;
+    }
+}
 @media screen and (max-width: 1300px) {
     .presentation {
         height: auto;
@@ -475,14 +495,15 @@ h1 {
     .titre-pres {
         padding-left: 0;
     }
+    .pres-gauche{
+        padding-left: 0;
+    }
+    .pres-droite{
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 1100px) {    
-    .fond-forme {
-        width: 100%;
-        height: 150%;
-        transform: rotate(0) translateY(0) translateX(0);
-    }
     .titre-pres {
         margin: 0 0 20px 0;
         padding-top: 50px;
@@ -495,10 +516,10 @@ h1 {
         width: 80%;
         flex-shrink: 1;
         margin-bottom: 10px;
-        padding: 20px 0;
+
     }
     .pres-gauche h3, .pres-droite h3 {
-        font-size: 20px;
+        font-size: 25px;
         letter-spacing: 0px;
     }
     .pres-gauche p {
@@ -521,13 +542,16 @@ h1 {
     }
 }
 
-@media screen and (max-width: 700px) {    
+@media screen and (max-width: 700px) {
+    .presentation{
+        padding-bottom: 0;
+    }    
     .container-presentation {
         margin-top: 10px;
         margin-bottom: 70px;
     }
     .titre-pres {
-        font-size: 24px;
+        font-size: 25px;
         margin: 0 10px
     }
     .pres-gauche h3, .pres-droite h3 {
@@ -536,9 +560,6 @@ h1 {
     .txt-liste {
         font-size: 18px;
     }
-}
-
-@media screen and (max-width: 700px) {
     .btn-pres {
         width: 120px;
         font-size: 13px;
@@ -547,27 +568,141 @@ h1 {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .titre-pres{
+        padding: 30px 0 10px;    
+    }
+    .presentation h3 {
+        font-size: 18px;
+    }
+    .pres-gauche p{
+        font-size: 16px;
+    }
+}
+/*-------------- Skills ----------------*/
+
+.skills-section {    
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    background: #e7e7e7;
+    padding-bottom: 30px; 
+}
+
+.titre-skills {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 50px 0;
+    padding-left: 300px;
+}
+.cont-skills{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding-left: 300px;
+}
+
+.stack-cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 5px 0px 10px;
+    margin: 20px auto;
+}
+.img-cat {
+    margin-top: 5px;
+}
+.stack-cat h3{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    padding: 5px 0 10px 0;
+    text-align: center;
+}
+
+.tools {
+    text-align: center;
+    line-height: 1.4;
+
+}
+
+/* ! MQ Skills */
+
+@media screen and (max-width: 1340px) {
+    .cont-skills {
+        align-items: center;
+    }
+    .stack-cat {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .cont-skills{
+        padding-left: 0;
+    }
+    .titre-skills {
+        font-size: 40px;
+        margin: 0 0 20px 0;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .skills-section{
+        padding-bottom: 30px;
+    }
+    .titre-skills {
+        font-size: 25px;
+        margin: 0 10px
+    }
+    .skills-section h3{
+        font-size: 18px;
+    }
+    .tool {
+        font-size: 16px;
+    }
+}
+
 /*------------ Portfolio ---------------- */
 
 .portfolio {
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8c969;
+    border-bottom: 1px dashed black;
+    padding-bottom: 50px;
+
 }
 .titre-port {
     text-align: center;
     padding: 50px 0;
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 300px;
 }
-
 .cont-portfolio {
     width: 100%;
     height: auto;
-    margin: 0 auto 100px auto;
     padding-left: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
 .item {
     display: flex;
@@ -578,7 +713,7 @@ h1 {
     width: 420px;
     height: 400px;
     background: #f0f2f0;
-    color: #333;
+    color: black;
     transition: transform 0.3s ease-out;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -591,7 +726,7 @@ h1 {
     overflow: hidden;
 }
 .cont-img-port img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 .item h3 {
@@ -600,6 +735,7 @@ h1 {
 }
 .item p {
     padding: 10px 10px 0;
+    font-size: 16px;
 }
 .btn-projets {
     display: block;
@@ -608,16 +744,15 @@ h1 {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: #333;
+    color: black;
     font-weight: 500;
     text-decoration: none;
-    border: 1.5px solid #333;
+    border: 1.5px solid black;
     border-radius: 3px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
-
 .btn-projets::after {
     content: '';
     height: 240px;
@@ -634,7 +769,7 @@ h1 {
     transform: translateX(400px);
 }
 
-/* MQ Portfolio */
+/*! MQ Portfolio */
 
 @media screen and (max-width: 1300px) {
     .cont-portfolio{
@@ -642,17 +777,25 @@ h1 {
     }
     .titre-port {
         font-size: 40px;
-        margin: 50px 0 70px;
         padding-left: 0;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .portfolio{
+        padding-bottom: 0;
+    }
+    .titre-port {
+        font-size: 25px;
+        margin: 0 10px
+    }
+    .btn-projets{
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 500px) {
-
-    .titre-port {
-        margin: 10px 0;
-        padding: 30px 0;
-    }
     .item {
         height: 420px;
     }
@@ -668,9 +811,6 @@ h1 {
     .item p{
         font-size: 15px;
     }
-    .btn-projets{
-        font-size: 18px;
-    }
 }
 @media screen and (max-width: 340px) {
     .item {
@@ -678,16 +818,28 @@ h1 {
     }
 }
 
-/*--------------- Footer ------------------------*/
+/*--------------- Footer ----------------*/
 
 footer {
     width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 100px;
     padding-left: 300px;
 }
+/*! MQ Footer */
+
 @media screen and (max-width: 1300px) {
     footer {
         padding-left: 0px;
+    }
+}
+@media screen and (max-width: 700px) {
+    footer {
+        font-size: 16px;
+        padding: 0 10px;
     }
 }

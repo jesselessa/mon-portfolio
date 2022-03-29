@@ -33,23 +33,36 @@ typewriter
   .changeDelay(20)
   .typeString("Je suis Jessica ELESSA")
   .pauseFor(300)
-  .typeString("<strong>, Développeuse Full Stack</strong> ")
+  .typeString("<strong>, Développeuse Full Stack</strong>")
   .pauseFor(1000)
-  .deleteChars(11)
-  .typeString('<span style="color: #27ae60;"><strong>CSS</strong></span>')
+  .deleteChars(10)
+  .typeString(
+    '<span style="color: #ff0000;"><strong>JavaScript</strong></span>'
+  )
   .pauseFor(1000)
-  .deleteChars(3)
-  .typeString('<span style="color: #EA39ff;"><strong>React</strong></span> ')
+  .deleteChars(10)
+  .typeString('<span style="color: #ff7f00;"><strong>ReactJS</strong></span>')
+  .pauseFor(1000)
+  .deleteChars(7)
+  .typeString(
+    '<span style="color: #0f893b;"><strong>React Native</strong></span>'
+  )
+  .pauseFor(1000)
+  .deleteChars(12)
+  .typeString('<span style="color: #0080ff;"><strong>NodeJS</strong></span>')
   .pauseFor(1000)
   .deleteChars(6)
+  .typeString('<span style="color: #6c0ba9;"><strong>ExpressJS</strong></span>')
+  .pauseFor(1000)
+  .deleteChars(9)
+  .typeString('<span style="color: #e11584;"><strong>MongoDB</strong></span>')
+  .pauseFor(1000)
+  .deleteChars(7)
   .typeString(
-    '<span style="color: midnightblue;"><strong>React Native</strong></span> '
+    '<span style="color: #fa86c4;"><strong>PostgreSQL</strong></span>'
   )
   .pauseFor(1000)
-  .deleteChars(14)
-  .typeString(
-    '<span style="color: #ff6910;"><strong>JavaScript</strong></span>'
-  )
+  .deleteChars(10)
   .start();
 
 // GSAP Animation + ScrollMagic for homepage
@@ -102,6 +115,33 @@ const scene = new ScrollMagic.Scene({
   .setTween(tlpres)
   // .addIndicators()
   .addTo(controller);
+
+// Skills animation
+
+const skillsContainer = document.querySelector(".skills-section");
+const titreSkills = document.querySelector(".titre-skills");
+// const presGauche = document.querySelector(".pres-gauche");
+// const presDroite = document.querySelector(".pres-droite");
+const allStacks = document.querySelectorAll(".stack-cat");
+
+const tlSkills = new TimelineMax();
+
+tlSkills
+  .from(titreSkills, { y: -200, opacity: 0, duration: 0.6 })
+  // .from(presGauche, { y: -20, opacity: 0, duration: 0.6 }, "-=0.5")
+  // .from(presDroite, { y: -20, opacity: 0, duration: 0.6 }, "-=0.5")
+  .staggerFrom(allStacks, 1, { opacity: 0 }, 0.2, "-=0.5");
+
+const controllerSkills = new ScrollMagic.Controller();
+
+const sceneSkills = new ScrollMagic.Scene({
+  triggerElement: skillsContainer,
+  triggerHook: 0.5,
+  reverse: false,
+})
+  .setTween(tlSkills)
+  // .addIndicators()
+  .addTo(controllerSkills);
 
 // Portfolio animation
 

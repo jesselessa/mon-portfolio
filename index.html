@@ -38,6 +38,13 @@
                     Présentation
                 </a>
             </span>
+        </div>        
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#skills">
+                    Compétences
+                </a>
+            </span>
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
@@ -48,25 +55,18 @@
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#range">
-                    Langages et outils
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
                 <a href="#contact">
                     Contact
                 </a>
             </span>
         </div>
-        <div class="blocs-menu">
+        <!-- <div class="blocs-menu">
             <div class="logo-cercle">
                 <a href="#contact">
                     <img src="./ressources/contact.svg" alt="logo contact">
                 </a>
             </div>
-        </div>
+        </div> -->
     </nav>
 
     <!-- Section Homepage -->
@@ -92,7 +92,7 @@
 
         <a href="#pres">
             <div class="btn-rond">
-                <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+                <img src="ressources/arrowDown.svg" alt="logo flèche bas" class="logo-btn-rond-acc">
             </div>
         </a>
     </section>
@@ -146,14 +146,98 @@
 
 </section>
 
+<!------------ Section Skills --------------> 
+
+<section class="skills-section" id="skills">
+
+    <h2 class="titre-skills">Compétences</h2>
+
+    <div class="cont-skills">
+            <div class="stack-cat">
+                <img class="img-cat" src="./ressources/front-end.png" alt="img front-end">
+                <h3>FRONT-END</h3>
+                <div class="tools">
+                    <div class="tool">HTML</div>
+                    <div class="tool">CSS</div>
+                    <div class="tool">JavaScript</div>
+                    <div class="tool">React</div>
+                    <div class="tool">jQuery</div>
+                    <div class="tool">Bootstrap</div>
+                </div>           
+            </div>            
+            <div class="stack-cat">
+                <img class="img-cat" src="./ressources/backend.png" alt="img backend">
+                <h3>BACK-END</h3>
+                <div class="tools">
+                    <div class="tool">Node.js</div>
+                    <div class="tool">Express</div>
+                    <div class="tool">MongoDB</div>
+                    <div class="tool">PostgreSQL</div>
+                </div>
+            </div>            
+            <div class="stack-cat git">
+                <img class="img-cat" src="./ressources/version-control.png" alt="img contrôle de version">
+                <h3>CONTRÔLE<br>DE VERSION</h3>
+                <div class="tools">
+                    <div class="tool">Git</div>
+                </div>
+            </div>            
+            <div class="stack-cat">
+                <img class="img-cat" src="./ressources/portable.png" alt="img portable">
+                <h3>DÉVELOPPEMENT<br>MOBILE</h3>
+                <div class="tools">
+                    <div class="tool">React Native</div>     
+                    <div class="tool">Swift</div>     
+                    <div class="tool">SwiftUI</div>
+                </div>
+            </div>
+            <div class="stack-cat">
+                <img class="img-cat" src="./ressources/gestion-projet.png" alt="img projet">
+                <h3>GESTION<br>DE PROJET</h3>
+                <div class="tools">
+                    <div class="tool">Trello</div>     
+                    <div class="tool">Slack</div>     
+                    <div class="tool">Notion</div>     
+                </div>
+            </div>          
+            <div class="stack-cat figma">
+                <img class="img-cat" src="./ressources/design.png" alt="img design">
+                <h3>OUTILS<br>DE DESIGN</h3>
+                <div class="tools">
+                    <div class="tool">Figma</div>     
+                    <div class="tool">Canva</div>     
+                </div>
+            </div> 
+
+            <div class="stack-cat">
+                <img class="img-cat" src="./ressources/service-cloud.png" alt="img cloud">
+                <h3>HÉBERGEMENT WEB</h3>
+                <div class="tools"> 
+                    <div class="tool">GitHub Pages</div>     
+                    <div class="tool">Heroku</div>     
+                    <div class="tool">Netlify</div>                    
+                </div>
+            </div>
+            <div class="stack-cat others">
+                <img class="img-cat" src="./ressources/autres-outils.png" alt="images outils">
+                <h3>AUTRES</h3>
+                <div class="tools">
+                    <div class="tool">VS Code</div>     
+                    <div class="tool">WordPress</div>     
+                    <div class="tool">MS Office</div>
+                </div>
+            </div>
+    </div>
+
+</section>
+
 <!-- Section Portfolio -->
 
 <section class="portfolio" id="port">
 
-    <h2 class="titre-port">Mon Portfolio</h2>
+    <h2 class="titre-port">Mes Projets</h2>
 
     <div class="cont-portfolio">
-
 
         <div class="item vague1">
             <div class="cont-img-port">
@@ -222,7 +306,6 @@
             <a href="#" class="btn-projets">Voir le projet</a>
         </div>
 
-
         <div class="item vague3">
             <div class="cont-img-port">
                 <img src="ressources/projetsCars.jpg" alt="img portfolio">
@@ -232,7 +315,6 @@
             <a href="#" class="btn-projets">Voir le projet</a>
         </div>
 
-
         <div class="item vague3">
             <div class="cont-img-port">
                 <img src="ressources/form.jpg" alt="img portfolio">
@@ -241,6 +323,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
             <a href="#" class="btn-projets">Voir le projet</a>
         </div>
+        
     </div>
 
 </section>
