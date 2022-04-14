@@ -19,7 +19,7 @@ if (window.matchMedia("(max-width: 1300px)")) {
   });
 }
 
-// Text animation
+// Text animation with Typewriter
 
 const txtAnim = document.querySelector(".txt-animation");
 
@@ -116,20 +116,16 @@ const scene = new ScrollMagic.Scene({
   // .addIndicators()
   .addTo(controller);
 
-// Skills animation
+// GSAP animation + ScrollMagic for skills page
 
 const skillsContainer = document.querySelector(".skills-section");
 const titreSkills = document.querySelector(".titre-skills");
-// const presGauche = document.querySelector(".pres-gauche");
-// const presDroite = document.querySelector(".pres-droite");
 const allStacks = document.querySelectorAll(".stack-cat");
 
 const tlSkills = new TimelineMax();
 
 tlSkills
   .from(titreSkills, { y: -200, opacity: 0, duration: 0.6 })
-  // .from(presGauche, { y: -20, opacity: 0, duration: 0.6 }, "-=0.5")
-  // .from(presDroite, { y: -20, opacity: 0, duration: 0.6 }, "-=0.5")
   .staggerFrom(allStacks, 1, { opacity: 0 }, 0.2, "-=0.5");
 
 const controllerSkills = new ScrollMagic.Controller();
@@ -178,22 +174,5 @@ const scene3 = new ScrollMagic.Scene({
   reverse: false,
 })
   .setTween(tlPortfolio2)
-  // .addIndicators()
-  .addTo(controller);
-
-// Vague 3
-
-const itemPortfolio3 = document.querySelectorAll(".vague3");
-
-const tlPortfolio3 = new TimelineMax();
-
-tlPortfolio3.staggerFrom(itemPortfolio3, 1, { opacity: 0 }, 0.2, "-=0.5");
-
-const scene4 = new ScrollMagic.Scene({
-  triggerElement: itemPortfolio2,
-  triggerHook: 0.2,
-  reverse: false,
-})
-  .setTween(tlPortfolio3)
   // .addIndicators()
   .addTo(controller);
