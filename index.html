@@ -55,8 +55,8 @@
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#contact">
-                    Contact
+                <a href="mailto:jessica.elessa@gmail.com" target="_blank">
+                   Contact
                 </a>
             </span>
         </div>
@@ -65,10 +65,13 @@
     <!-- Section Homepage -->
 
     <section class="accueil" id="accueil">
-        <h1>Bienvenue sur mon portfolio </h1>
+        <h1>Bienvenue sur<br>mon portfolio</h1>
         <p class="txt-animation">Je suis Jessica ELESSA</p>
-        <a href="#port" class="btn-acc btn-acc1">Portfolio</a>
-        <a href="#" class="btn-acc btn-acc2">CV</a>
+        <div>
+            <a href="#port" class="btn-acc btn-acc1">Portfolio</a>
+            <a href="#" class="btn-acc btn-acc2">CV</a>
+        </div>
+       
 
         <div class="medias">
             <a href="https://github.com/jesselessa" target="_blank">
@@ -98,13 +101,13 @@
 
     <div class="container-presentation">
         <div class="pres-gauche">
-            <h3>Du code du travail au code informatique !</h3>
+            <h3>Du code du travail<br>au code informatique !</h3>
             <hr>
             <p>Depuis mon adolescence, j'ai toujours été attirée par le côté créatif lié à la programmation.</p>
-            <p>C'est notamment la raison pour laquelle, après avoir exercé le métier de juriste sociale pendant près de onze ans, j'ai décidé en 2020 de concrétiser ma passion pour la création numérique en devenant développeuse web.</p>
-            <p>À cette fin, j'ai suivi deux premières formations d'initiation au développement web et web mobile avec Simplon ("Hackeuses", au cours de laquelle j'ai appris à créer des sites web en HTML et CSS, et "Apple Foundation Program", durant laquelle j'ai appris à concevoir en équipe un prototype d'application native iOS à partir d'un besoin réel utilisateur).</p>
-            <p>Aujourd'hui, je suis apprenante chez Konexio où j'ai intégré la formation full stack de Développeur web et web mobile, débouchant sur un titre RNCP de niveau 5 (équivalent Bac +2).</p>
-            <p>Je suis actuellement à la recherche d'un stage d'une durée de 6 mois à partir de mai 2022.</p>            
+            <p>C'est notamment la raison pour laquelle, après avoir exercé le métier de juriste sociale pendant près de onze ans, j'ai décidé en 2020 de concrétiser ma passion pour la création numérique, en devenant développeuse web.</p>
+            <p>J'ai d'abord suivi deux formations d'initiation au développement web et web mobile chez Simplon (<span>"Hackeuses"</span> et <span>"l'Apple Foundation Program"</span>), au cours desquelles j'ai appris à prototyper et créer des sites web en HTML et CSS, ainsi qu'une application native iOS en Swift, à partir d'un besoin réel utilisateur.</p>
+            <p>Puis, j'ai poursuivi mon parcours en intégrant la formation full stack de <span>Développeur web et web mobile</span> de Konexio, durant laquelle je suis devenue une développeuse polyvalente, en apprenant à utiliser de nombreux outils frontend (JavaScript, React, React Native, jQuery, Bootstrap) et backend (Node.js, Express.js, API REST, PostgreSQL, MongoDB).</p>
+            <p>Aujourd'hui, je suis à la recherche d'un stage d'une durée de 6 mois à partir de mai 2022, afin de valider mon diplôme (titre professionnel RNCP de niveau 5, équivalent Bac +2).<p>                    
         </div>
         
         <div class="pres-droite">
@@ -147,8 +150,10 @@
 
     <div class="cont-skills">
             <div class="stack-cat">
-                <img class="img-cat" src="./ressources/front-end.png" alt="img front-end">
-                <h3>FRONT-END</h3>
+                <div class="stack-cat-title front">
+                    <img class="img-cat" src="./ressources/front-end.png" alt="img front-end">
+                    <h3>FRONT-END</h3>
+                </div>                
                 <div class="tools">
                     <div class="tool">HTML</div>
                     <div class="tool">CSS</div>
@@ -156,28 +161,26 @@
                     <div class="tool">React</div>
                     <div class="tool">jQuery</div>
                     <div class="tool">Bootstrap</div>
+                    <div class="tool">Tailwind CSS</div>
                 </div>           
             </div>            
             <div class="stack-cat">
-                <img class="img-cat" src="./ressources/backend.png" alt="img backend">
-                <h3>BACK-END</h3>
+                <div class="stack-cat-title">
+                    <img class="img-cat" src="./ressources/backend.png" alt="img backend">
+                    <h3>BACK-END</h3>
+                </div>                
                 <div class="tools">
                     <div class="tool">NodeJS</div>
                     <div class="tool">ExpressJS</div>
                     <div class="tool">MongoDB</div>
                     <div class="tool">PostgreSQL</div>
                 </div>
-            </div>            
-            <div class="stack-cat git">
-                <img class="img-cat" src="./ressources/version-control.png" alt="img contrôle de version">
-                <h3>CONTRÔLE<br>DE VERSION</h3>
-                <div class="tools">
-                    <div class="tool">Git</div>
-                </div>
-            </div>            
+            </div>                  
             <div class="stack-cat">
-                <img class="img-cat" src="./ressources/portable.png" alt="img portable">
-                <h3>DÉVELOPPEMENT<br>MOBILE</h3>
+                <div class="stack-cat-title">
+                    <img class="img-cat" src="./ressources/portable.png" alt="img portable">
+                    <h3>DEV MOBILE</h3>
+                </div>               
                 <div class="tools">
                     <div class="tool">React Native</div>     
                     <div class="tool">Swift</div>     
@@ -185,26 +188,22 @@
                 </div>
             </div>
             <div class="stack-cat">
-                <img class="img-cat" src="./ressources/gestion-projet.png" alt="img projet">
-                <h3>GESTION<br>DE PROJET</h3>
+                <div class="stack-cat-title">
+                    <img class="img-cat" src="./ressources/gestion-projet.png" alt="img projet">
+                    <h3>GESTION DE PROJET</h3>
+                </div>                
                 <div class="tools">
+                    <div class="tool">Git</div>     
                     <div class="tool">Trello</div>     
                     <div class="tool">Slack</div>     
                     <div class="tool">Notion</div>     
                 </div>
-            </div>          
-            <div class="stack-cat figma">
-                <img class="img-cat" src="./ressources/design.png" alt="img design">
-                <h3>OUTILS<br>DE DESIGN</h3>
-                <div class="tools">
-                    <div class="tool">Figma</div>     
-                    <div class="tool">Canva</div>     
-                </div>
-            </div> 
-
+            </div>       
             <div class="stack-cat">
-                <img class="img-cat" src="./ressources/service-cloud.png" alt="img cloud">
-                <h3>DÉPLOIEMENT WEB</h3>
+                <div class="stack-cat-title">
+                    <img class="img-cat" src="./ressources/service-cloud.png" alt="img cloud">
+                    <h3>DÉPLOIEMENT WEB</h3>
+                </div>                
                 <div class="tools"> 
                     <div class="tool">GitHub</div>     
                     <div class="tool">Heroku</div>     
@@ -212,10 +211,14 @@
                 </div>
             </div>
             <div class="stack-cat others">
-                <img class="img-cat" src="./ressources/autres-outils.png" alt="images outils">
-                <h3>AUTRES</h3>
+                <div class="stack-cat-title">
+                    <img class="img-cat" src="./ressources/autres-outils.png" alt="images outils">
+                    <h3>AUTRES</h3>
+                </div>                
                 <div class="tools">
                     <div class="tool">VS Code</div>     
+                    <div class="tool">Figma</div>     
+                    <div class="tool">Canva</div>     
                     <div class="tool">WordPress</div>     
                     <div class="tool">MS Office</div>
                 </div>
@@ -230,18 +233,20 @@
 
     <h2 class="titre-port">Mes Projets</h2>
 
+    <p class="intro-port">Sur cette page, retrouvez quelques-uns des projets sur lesquels j'ai travaillé</p>
+
     <div class="cont-portfolio">
 
         <div class="item vague1">
             <div class="cont-img-port">
-                <img src="ressources/bootstrap.jpg" alt="img portfolio">
+                <img src="./ressources/WeatherApp.png">
             </div>
             <div class="cont-txt-port">
                 <h3>My Weather</h3>
-                <p>Un site web permettant de collecter, de sauvegarder et de supprimer des données météorologiques</p>
-                <p class="stack-port">ReactJS</p>
+                <p class="description">Un site web permettant de collecter, sauvegarder et supprimer les données météorologiques d'une ville</p>
+                <p class="stack-port">ReactJS/Tailwind/API/Netlify</p>
             </div>            
-            <a href="#" class="btn-projets">Voir le projet</a>
+            <a href="https://jesselessa-weather-app.netlify.app/" class="btn-projets" target="_blank">Voir le projet</a>
         </div>
 
         <div class="item vague1">
@@ -250,23 +255,13 @@
             </div>
             <div class="cont-txt-port">
                 <h3>Connect 4</h3>
-                <p>Jeu Puissance 4</p>
-                <p class="stack-port">ReactJS</p>
+                <p class="description">Jeu Puissance 4 ("4 alignés, c'est gagné !")</p>
+                <p class="stack-port">ReactJS/GitHub</p>
             </div>            
             <a href="https://jesselessa.github.io/connect4" target="_blank" class="btn-projets">Voir le projet</a>
         </div>
 
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="./ressources/Cui'zine.png" alt="img portfolio">
-            </div>
-            <div class="cont-txt-port">
-                <h3>Cui'zine</h3>
-                <p>Blog de cuisine</p>
-                <p class="stack-port">HTML/CSS/Bootstrap</p>
-            </div>            
-            <a href="#" class="btn-projets">Voir le projet</a>
-        </div>
+        
 
         <div class="item vague2">
             <div class="cont-img-port">
@@ -274,8 +269,8 @@
             </div>
             <div class="cont-txt-port">
                 <h3>Objets connectés et vie privée</h3>
-                <p>Site présenté devant un jury dans le cadre de ma première certification en développement web</p>
-                <p class="stack-port">HTML/CSS/JS</p>
+                <p class="description">Site présenté devant un jury dans le cadre de ma première certification en développement web</p>
+                <p class="stack-port">HTML/CSS/JS/GitHub</p>
             </div>            
             <a href="https://jesselessa.github.io/objetsconnectes-et-vieprivee/" target="_blank" class="btn-projets">Voir le projet</a>
         </div>
@@ -286,8 +281,8 @@
             </div>
             <div class="cont-txt-port">
                 <h3>Jeanne Boutique</h3>
-                <p>Site vitrine d'une boutique en ligne de vêtements</p>
-                <p class="stack-port">HTML/CSS/JS</p>
+                <p class="description">Site vitrine d'une boutique en ligne de vêtements</p>
+                <p class="stack-port">HTML/CSS/JS/GitHub</p>
             </div>            
             <a href="https://jesselessa.github.io/Jeanne/" target="_blank" class="btn-projets">Voir le projet</a>
         </div>
@@ -298,8 +293,8 @@
             </div>
             <div class="cont-txt-port">
                 <h3>Ma série préférée</h3>
-                <p>Site web portant sur la série britannique "The Crown"</p>
-                <p class="stack-port">HTML/CSS/JS</p>
+                <p class="description">Site web portant sur la série britannique "The Crown"</p>
+                <p class="stack-port">HTML/CSS/JS/GitHub</p>
             </div>            
             <a href="https://jesselessa.github.io/ma-serie-prefereree/" target="_blank" class="btn-projets">Voir le projet</a>
         </div>
