@@ -1,3 +1,27 @@
+// Bouton ascenseur
+button = document.getElementById("button-top");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
+  ) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+scrollFunction();
+
+function topFunction() {
+  document.body.scrollTop = 0; // Pour Safari
+  document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE and Opera
+}
+topFunction();
+
 // Menu animation
 
 const btnMenu = document.querySelector(".btn-rond-menu");

@@ -22,7 +22,20 @@ img {
     display: block;
     max-width: 100%;
 }
-
+/*------------- Bouton ascenseur -------------*/
+#button-top {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    z-index: 100; /* Pas de chevauchement */
+    cursor: pointer;
+  }
+  .fa-chevron-circle-up {
+    color: black;
+    font-size: 5rem;
+  }
+  
 /*----------------- Navigation ----------------*/
 .nav-gauche {   
     width: 300px;
